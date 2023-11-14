@@ -1,6 +1,20 @@
-from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.common.by import By
+try:
+    from selenium import webdriver
+except ModuleNotFoundError:
+    print("O módulo Selenium não está instalado. Instalando agora...")
+    import subprocess
+    subprocess.run(["pip", "install", "selenium==3.141.0"])
+    from selenium import webdriver
+
+# Restante do código que depende do módulo selenium
+
+try:
+    from selenium.webdriver.chrome.options import Options
+    from selenium.webdriver.common.by import By
+except ModuleNotFoundError:
+    print("O módulo Selenium não está instalado corretamente. Verifique a instalação.")
+    # Pode ser útil encerrar o script ou tomar outras medidas adequadas
+
 import time
 
 def scrape_quotes(url, xpath_expression):
