@@ -1,4 +1,4 @@
-# BEEMON
+# Beemon_Coletando_Dados
 
 Este software foi desenvolvido para automatizar a coleta de dados de sites específicos, oferecendo ao usuário a liberdade de escolher entre as opções fornecidas, como o popular "quotes.toscrape". Com a capacidade de execução via linha de comando ou por meio de uma interface clicável, o software se adapta às preferências do usuário, proporcionando uma experiência versátil.
 
